@@ -8,9 +8,9 @@ export default function ResponsePanel() {
   const { values: { lastResponse } } = useContext(DataContext);
 
   return (
-    <div className="grid grid-rows-[minmax(0,1fr)] grid-cols-[minmax(0,1fr) h-full">
+    <div className="bg-black/15 grid grid-rows-[minmax(0,1fr)] grid-cols-[minmax(0,1fr) h-full">
       <Resizable
-        className="h-full border-l-8 border-black/10 responsePanel"
+        className="h-full responsePanel"
         defaultSize={{
           width: 700,
           height: 'auto',
@@ -32,9 +32,7 @@ export default function ResponsePanel() {
             // @ts-ignore
             renderIndentGuides: false,
             automaticLayout: true,
-            fontSize: 14,
             wordWrap: 'on',
-            folding: false,
           }}
           beforeMount={setMonacoTheme}
         />

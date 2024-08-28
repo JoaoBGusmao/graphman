@@ -53,8 +53,8 @@ const theme = {
     { token: 'invalid', foreground: 'ff5370', background: '2d2a2e' },
   ],
   colors: {
-    'editor.background': '#1e1e2e',
-    'editor.foreground': '#ffffff',
+    'editor.background': '#00000000',
+    'editor.foreground': '#00000000',
     'editor.lineHighlightBackground': '#2c2c3e',
     'editorCursor.foreground': '#ffcc00',
     'editor.selectionBackground': '#5c5c7e77',
