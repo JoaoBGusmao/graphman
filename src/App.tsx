@@ -1,20 +1,15 @@
 import React from 'react';
-import GraphQLEditor from './Components/GraphQLEditor/GraphQLEditor';
-import URLInput from './Components/URLInput/URLInput';
+import NetworkProvider from './Contexts/NetworkContext';
+import Panel from './Components/Panel/Panel';
+import DataProvider from './Contexts/DataContext';
 
 function App() {
   return (
-    <div className="flex flex-col h-screen">
-      <URLInput />
-
-      <div className="flex flex-1 h-full w-full">
-        <GraphQLEditor />
-
-        <div className="bg-[#1e1e2e] w-[300px]">Hello World</div>
-      </div>
-
-      <input type="text" className="bg-purple-600" />
-    </div>
+    <DataProvider>
+      <NetworkProvider>
+        <Panel />
+      </NetworkProvider>
+    </DataProvider>
   );
 }
 
